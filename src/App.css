@@ -1,33 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.linkdiv a{
-    display: inline-block;
+.linkdiv a {
+  display: inline-block;
 }
 
-.linkdiv a::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: linear-gradient(90deg, rgb(0, 200, 255), rgb(0, 170, 255), rgb(0, 100, 255));
-    display: block;
-    margin-right: auto;
-    transition: 0.5s;
+.linkdiv a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 200, 255),
+    rgb(0, 170, 255),
+    rgb(0, 100, 255)
+  );
+  display: block;
+  margin-right: auto;
+  transition: 0.5s;
 }
 
-.linkdiv a:hover::after{
+.linkdiv a:hover::after {
+  width: 100%;
+}
+
+.LiBtn {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 200, 255),
+    rgb(0, 170, 255),
+    rgb(0, 100, 255)
+  );
+  padding: 7px;
+  transition: 0.5s;
+}
+
+.LiBtn:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 23px 0px;
+}
+
+.Home {
+  padding-top: 8.5px;
+}
+
+@media (max-width: 940px) {
+  .linkdiv {
+    display: none;
+  }
+  .header {
+    position: sticky;
+    top: 0;
+  }
+  .LiBtn {
+    position: fixed;
+    right: 0;
+  }
+  .Home {
+    flex-direction: column-reverse;
+  }
+  .leftdiv {
     width: 100%;
+    font-size: 10%;
+  }
+  .rightdiv {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
-.LiBtn{
-    background: linear-gradient(90deg, rgb(0, 200, 255), rgb(0, 170, 255), rgb(0, 100, 255));
-    padding: 7px;
-    transition: 0.5s;
+@media (max-width: 710px){
+    .leftdiv h1{
+        font-size: 50px;
+    }
+    .rightdiv img{
+        width: 50%;
+    }
 }
 
-.LiBtn:hover{
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 23px 0px;
+
+@media (max-width: 500px){
+    .leftdiv h1{
+        font-size: 40px;
+    }
+    .leftdiv p{
+        font-size: 18px;
+    }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="flex flex-row p-5">
+    <div className="header flex flex-row p-5 bg-gray-100">
       <div className="imgdiv flex flex-row mx-7">
         <img className="w-7 h-7 mx-2" src="/images/hosp9.png" alt="logo" />
         <h1 className="text-xl font-bold">IndiHospitality</h1>
