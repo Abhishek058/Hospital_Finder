@@ -2,7 +2,7 @@ import React from "react";
 
 function Facilities() {
   return (
-    <div className="facility flex flex-row mx-9 mx-auto my-10 text-center">
+    <div className="facility flex flex-row mx-10 mx-auto my-10 text-center">
       <div className="faci1 flex flex-col w-1/4 h-64 justify-center items-center">
         <div className="flex rounded-full bg-blue-700 justify-center w-max p-3">
           <img className="w-7" src="/images/firstaid.png" alt="" />
