@@ -101,6 +101,17 @@
   }
 }
 
+.faci1{
+  transition: 0.6s;
+}
+
 .facility {
   background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 255));
+}
+
+.faci1:hover{
+  margin-top: -20px;
+  background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 0));
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 23px 0px;
+  border-radius: 5px;
 }
