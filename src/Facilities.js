@@ -18,7 +18,7 @@ function Facilities() {
         </div>
         <h1 className="font-bold text-white my-5 text-xl">Best Service</h1>
         <p className="font-medium text-gray-300">
-        Provide excellent services and <br /> treatment for patients
+          Provide excellent services and <br /> treatment for patients
         </p>
       </div>
       <div className="faci1 flex flex-col w-1/4 h-64 justify-center items-center">
