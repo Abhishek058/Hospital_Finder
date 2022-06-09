@@ -7,9 +7,9 @@ function Facilities() {
         <div className="flex rounded-full bg-blue-700 justify-center w-max p-3">
           <img className="w-7" src="/images/firstaid.png" alt="" />
         </div>
-        <h1 className="font-bold text-white my-5 text-xl">JCI Accredited</h1>
+        <h1 className="font-bold text-white my-5 text-xl">NABH Accredited</h1>
         <p className="font-medium text-gray-300">
-          Best safety and security with <br /> JCI Accredited
+          Best safety and security with <br /> NABH Accredited
         </p>
       </div>
       <div className="faci1 flex flex-col w-1/4 h-64 justify-center items-center">

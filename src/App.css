@@ -115,3 +115,12 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 23px 0px;
   border-radius: 5px;
 }
+
+.spec1{
+  background: linear-gradient(90deg, rgb(0, 100, 255), rgb(0, 200, 255), rgb(0, 0, 255));
+  transition: 0.3s;
+}
+
+.spec1:hover{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
+}
