@@ -118,7 +118,7 @@
 
 .faci1:hover {
   margin-top: -20px;
-  background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 0));
+  background: linear-gradient(rgb(0, 200, 255), rgb(0, 0, 0, 0.7));
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 23px 0px;
   border-radius: 5px;
 }
@@ -144,9 +144,9 @@
 
 .tst2:hover {
   background: linear-gradient(
-    rgb(0, 0, 0, 0.8),
+    rgb(0, 0, 0, 0.5),
     rgb(0, 200, 255),
-    rgb(0, 0, 0, 0.8)
+    rgb(0, 0, 0, 0.5)
   );
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
   color: blue;
@@ -154,4 +154,21 @@
 
 .tst1:hover h1 {
   color: blue;
+}
+
+.rgbtn {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 200, 255),
+    rgb(0, 170, 255),
+    rgb(0, 100, 255)
+  );
+  padding: 7px;
+  color: white;
+  transition: 0.5s;
+}
+
+.rgbtn:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
 }
