@@ -83,15 +83,12 @@
   .rightdiv img {
     width: 50%;
   }
-  .facility{
+  .facility {
     flex-direction: column;
   }
-  .faci1{
-    background: linear-gradient(
-    rgb(0, 200, 255),
-    rgb(0, 00, 255)
-  );
-  width: 100%;
+  .faci1 {
+    background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 255));
+    width: 100%;
   }
 }
 
@@ -104,9 +101,6 @@
   }
 }
 
-.facility{
-  background: linear-gradient(
-    rgb(0, 200, 255),
-    rgb(0, 00, 255)
-  );
+.facility {
+  background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 255));
 }
