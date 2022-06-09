@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
 .linkdiv a {
   display: inline-block;
 }
@@ -39,7 +44,7 @@
 
 .LiBtn:hover {
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 23px 0px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
 }
 
 .Home {
@@ -71,21 +76,37 @@
   }
 }
 
-@media (max-width: 710px){
-    .leftdiv h1{
-        font-size: 50px;
-    }
-    .rightdiv img{
-        width: 50%;
-    }
+@media (max-width: 710px) {
+  .leftdiv h1 {
+    font-size: 50px;
+  }
+  .rightdiv img {
+    width: 50%;
+  }
+  .facility{
+    flex-direction: column;
+  }
+  .faci1{
+    background: linear-gradient(
+    rgb(0, 200, 255),
+    rgb(0, 00, 255)
+  );
+  width: 100%;
+  }
 }
 
+@media (max-width: 500px) {
+  .leftdiv h1 {
+    font-size: 40px;
+  }
+  .leftdiv p {
+    font-size: 18px;
+  }
+}
 
-@media (max-width: 500px){
-    .leftdiv h1{
-        font-size: 40px;
-    }
-    .leftdiv p{
-        font-size: 18px;
-    }
+.facility{
+  background: linear-gradient(
+    rgb(0, 200, 255),
+    rgb(0, 00, 255)
+  );
 }

@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   return (
     <div className="Home flex flex-row">
-      <div className="leftdiv w-2/3 bg-gray-200 p-16">
+      <div className="leftdiv w-2/3 p-16">
         <h1 className="text-7xl font-bold p-5">
           A heritage in care.
           <br />A reputation in excellence.
