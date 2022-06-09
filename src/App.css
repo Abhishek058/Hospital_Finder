@@ -136,3 +136,22 @@
 .spec1:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
 }
+
+.tst2 {
+  background: linear-gradient(rgb(0, 200, 255), rgb(0, 0, 255));
+  transition: 0.5s;
+}
+
+.tst2:hover {
+  background: linear-gradient(
+    rgb(0, 0, 0, 0.8),
+    rgb(0, 200, 255),
+    rgb(0, 0, 0, 0.8)
+  );
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
+  color: blue;
+}
+
+.tst1:hover h1 {
+  color: blue;
+}
