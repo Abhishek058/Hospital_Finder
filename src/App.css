@@ -90,6 +90,13 @@
     background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 255));
     width: 100%;
   }
+  .special {
+    flex-direction: column;
+    align-items: center;
+  }
+  .spec1 {
+    width: 80%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -101,7 +108,7 @@
   }
 }
 
-.faci1{
+.faci1 {
   transition: 0.6s;
 }
 
@@ -109,18 +116,23 @@
   background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 255));
 }
 
-.faci1:hover{
+.faci1:hover {
   margin-top: -20px;
   background: linear-gradient(rgb(0, 200, 255), rgb(0, 00, 0));
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 23px 0px;
   border-radius: 5px;
 }
 
-.spec1{
-  background: linear-gradient(90deg, rgb(0, 100, 255), rgb(0, 200, 255), rgb(0, 0, 255));
+.spec1 {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 100, 255),
+    rgb(0, 200, 255),
+    rgb(0, 0, 255)
+  );
   transition: 0.3s;
 }
 
-.spec1:hover{
+.spec1:hover {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
 }
