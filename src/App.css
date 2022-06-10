@@ -172,3 +172,17 @@
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 23px 0px;
 }
+
+.Footer {
+  background: linear-gradient(
+    rgb(0, 200, 255),
+    rgb(0, 100, 255),
+    rgb(0, 70, 255)
+  );
+}
+.footlink a {
+  transition: 0.5s;
+}
+.footlink a:hover {
+  color: black;
+}
