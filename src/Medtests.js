@@ -38,8 +38,8 @@ function Medtests() {
           <h1 className="font-medium mt-7">HOME TEST</h1>
         </div>
       </div>
-      <div className="rgbtn my-12 w-36 text-center font-medium self-center">
-        Register
+      <div className="rgbtn my-12 w-36 text-center font-medium self-center rounded-md">
+        <a href="https://www.cowin.gov.in/" target="_blank">Register</a>
       </div>
     </div>
   );
