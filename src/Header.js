@@ -13,9 +13,9 @@ function Header() {
         <a href="#">Services</a>
         <a href="https://pharmeasy.in/">Pharmacy</a>
       </div>
-      <div className="LiBtn mx-10 w-36 text-center font-medium self-center">
-        LogIn
-      </div>
+        <div className="LiBtn mx-10 w-36 text-center font-medium self-center">
+          LogIn
+        </div>
     </div>
   );
 }
