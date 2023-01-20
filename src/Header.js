@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,14 +9,14 @@ function Header() {
         <h1 className="text-xl font-bold">IndiHospitality</h1>
       </div>
       <div className="text-center linkdiv space-x-7 w-9/12 font-medium text-lg">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="https://pharmeasy.in/">Pharmacy</a>
+        <Link to="/">Home</Link>
+        <Link to="/">About Us</Link>
+        <Link to="/">Services</Link>
+        <Link to="https://pharmeasy.in/">Pharmacy</Link>
       </div>
-        <div className="LiBtn mx-10 w-36 text-center font-medium self-center">
-          LogIn
-        </div>
+      <div className="LiBtn mx-10 w-36 text-center font-medium self-center">
+        <Link to="/">LogIn</Link>
+      </div>
     </div>
   );
 }
