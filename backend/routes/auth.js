@@ -34,13 +34,13 @@ router.post(
         email: req.body.email,
       });
       const data = {
-        id: user.id
+        id: user.id,
       };
       const jwtData = jwt.sign(data, JWT_SECRET);
       console.log(jwtData);
 
       const authotoken = jwt.sign(data, JWT_SECRET);
-      res.json({authotoken});
+      res.json({ authotoken });
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Some Error Occured");
@@ -48,4 +48,33 @@ router.post(
   }
 );
 
+router.post(
+  "/login",
+  [body("email").isEmail(), body("password").exists()],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+    const { email, password } = req.body;
+    try {
+      let user = await User.findOne({ email });
+      if (!user) {
+        return res.status(400).json({ error: "Invalid Password / Email" });
+      }
+      const passwordCompare = await bcrypt.compare(password, user.password);
+      if (!passwordCompare) {
+        return res.status(400).json({ error: "Invalid Password / Email" });
+      }
+      const data = {
+        id: user.id,
+      };
+      const authotoken = jwt.sign(data, JWT_SECRET);
+      res.json({ authotoken });
+    } catch (error) {
+      console.error(error.message);
+      res.status(500).send("Internal Error Occured");
+    }
+  }
+);
 module.exports = router;
