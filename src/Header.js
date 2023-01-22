@@ -14,9 +14,11 @@ function Header() {
         <Link to="/">Services</Link>
         <Link to="https://pharmeasy.in/">Pharmacy</Link>
       </div>
-      <div className="LiBtn mx-10 w-36 text-center font-medium self-center">
-        <Link to="/">LogIn</Link>
-      </div>
+      <Link to="/login">
+        <div className="LiBtn mx-10 w-36 text-center font-medium self-center">
+          LogIn
+        </div>
+      </Link>
     </div>
   );
 }

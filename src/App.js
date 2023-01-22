@@ -1,22 +1,17 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Facilities from "./Facilities";
-import Footer from "./Footer";
-import Header from "./Header";
-import Home from "./Home";
-import Medtests from "./Medtests";
-import Speciality from "./Speciality";
+import All from "./All";
+import Login from "./Login";
 
 function App() {
   return (
     <Router>
       <div className="App bg-gray-200">
-        <Header />
-        <Home />
-        <Facilities />
-        <Speciality />
-        <Medtests />
-        <Footer />
+        <Routes>
+          <Route path="/" element={<All />}></Route>
+          <Route path="/about" element={<div>about</div>} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
       </div>
     </Router>
   );
