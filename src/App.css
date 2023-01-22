@@ -230,3 +230,17 @@
     display: none;
   }
 }
+
+.Login{
+  height: 100vh;
+  background-image: url("../public/images/loginbg.jpg");
+  background-size: cover;
+}
+
+@media (max-width: 500px) {
+  .Login{
+    height: 100vh;
+    background-image: url("../public/images/loginbg2.jpg");
+    background-size: cover;
+  }
+}
