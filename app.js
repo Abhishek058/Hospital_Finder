@@ -12,7 +12,10 @@ app.post("/", async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const check = await collection.findOne({ email: email });
+    const check = await collection.findOne({
+      email: email,
+      password: password,
+    });
 
     if (check) {
       res.json("exist");
@@ -23,7 +26,7 @@ app.post("/", async (req, res) => {
     res.json("fail");
   }
 });
-  
+
 app.post("/signup", async (req, res) => {
   const { email, password } = req.body;
 
